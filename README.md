@@ -21,13 +21,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1- in Windows, using server manager.install Active Directory Domain Services
-Promote as a DC
+- Step 1- in Windows 1, using server manager.install Active Directory Domain Services
+ & Promote as a DC
 
-- Step 2- Promote DC1 as a domain controller. configure  Setup a new forest as mydomain.com  
+- Step 2- Now that active directory is installed we will Promote DC1 as a domain controller in whats called a New forest as My domain.com
 
-- Step 3
-
+- Step 3- Within DC-1, In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES” OU named “_ADMINS”
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
@@ -39,18 +38,34 @@ open server manager> Add Roles and Features> next> next> select your Server> fin
 
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+![image](https://github.com/user-attachments/assets/ced2477c-8e33-465f-8b34-094f4c97081c)
+Go back to DC-1>Server manager> Locate the triangular image below the flag and click on it. it will say promote the server to a Domain controller. click that and if its successful your computer will Restart
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />configure-ad
+
+
+![image](https://github.com/user-attachments/assets/501bdc47-3986-4549-a13e-4600b1daa20b)
+
+
+
+
+After your computer successfully restarts navigate to - windows Adminstrative tools> Active directory users & computers> 
+
+
+
+![image](https://github.com/user-attachments/assets/198347f6-5d6c-4638-ba29-573c062e6d50)
+
+
+Right click My domain> New> Organizational Unit
+
+
+
+
+![image](https://github.com/user-attachments/assets/abb13e25-6dc2-486d-b4a8-3612fa4de598)
+name_______ _EMPLOYEES and click OK
+
+
+
+![image](https://github.com/user-attachments/assets/ee273f39-e188-412b-b5c9-baaaf36b00a5)
+Repeat Process for Creating Admins Organizational unit
+
+
