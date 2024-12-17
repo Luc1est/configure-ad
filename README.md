@@ -27,10 +27,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 2- Now that active directory is installed we will Promote DC1 as a domain controller in whats called a New forest as My domain.com
 
 - Step 3- Within DC-1, In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES” OU named “_ADMINS”
-- Step 4
 
+- Step 4- Create a new employee named “Jane Doe” 
 <h2>Deployment and Configuration Steps</h2>
 
+- Step 5- Add jane_admin to the “Domain Admins” Security Group
 
 ![image](https://github.com/user-attachments/assets/291fa086-ea6c-4893-80b4-e2566e920ddf)
 open server manager> Add Roles and Features> next> next> select your Server> find service roles, and click active directory Domain services. hit next until it ask's you to install.
@@ -69,3 +70,19 @@ name_______ _EMPLOYEES and click OK
 Repeat Process for Creating Admins Organizational unit
 
 
+![image](https://github.com/user-attachments/assets/fe7e40d2-c173-4e42-bd76-1ee7fc1785c8)
+click on Admins> Folder> NEW> User> 
+
+
+![image](https://github.com/user-attachments/assets/9f1e8ff8-a59b-4c5c-8cf3-61c12cb3272d)
+Fill out the users Information 
+
+
+![image](https://github.com/user-attachments/assets/2ee1b429-01dc-4805-869e-1ca229db3b6f)
+Create the users Password
+
+
+
+![image](https://github.com/user-attachments/assets/47211951-b11b-423d-b7c9-3bb14bac5c6e)
+
+Navigate to Admins and find janes account. Right Click,Properties > Members of > ADD, write  Domain Admins and check names
